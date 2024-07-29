@@ -24,34 +24,39 @@
 			type="text/css"
 		/>
 		<!-- Core theme CSS (includes Bootstrap)-->
-		<link href="css/styles.css" rel="stylesheet" />
+		<link href="../css/styles.css" rel="stylesheet" />
 	</head>
 	<body>
 		<!-- Navigation-->
-		<nav
-			class="navbar bg-dark border-bottom border-body justify-content-center"
-			data-bs-theme="dark"
-		>
-			<div>
-				<ul class="nav">
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Auto Insurance</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Final Expense</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link disabled" aria-disabled="true">Medicare</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link disabled" aria-disabled="true">U65</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
+		<nav class="navbar navbar-expand-lg bg-blue border-body" data-bs-theme="dark">
+      <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="./assets/img/logo/223.jpg" alt="Bootstrap" width="50" height="40">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="nav">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../pages/auto_insurance.html">Auto Insurance</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../pages/final_expense.html">Final Expense</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../pages/medicare.html">Medicare</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" aria-disabled="true">U65</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
 		<!-- Masthead-->
 		<header class="masthead">
 			<div class="container position-relative">
@@ -59,59 +64,19 @@
 					<div class="col-xl-6">
 						<div class="text-center text-white">
 							<!-- Page heading-->
-							<h1 class="mb-5">New to us?</h1>
-							<!-- Signup form-->
-							<!-- * * * * * * * * * * * * * * *-->
-							<!-- * * SB Forms Contact Form * *-->
-							<!-- * * * * * * * * * * * * * * *-->
-							<!-- This form is pre-integrated with SB Forms.-->
-							<!-- To make this form functional, sign up at-->
-							<!-- https://startbootstrap.com/solution/contact-forms-->
-							<!-- to get an API token!-->
-							<form
-								class="form-subscribe"
-								id="contactForm"
-								data-sb-form-api-token="API_TOKEN"
-							>
-								<!-- Email address input-->
+							<h1 class="mb-5">Click below to..</h1>
 								<div class="row">
 									<div class="col">
 										<div class="col-auto">
 											<button
-												class="btn btn-primary btn-lg disabled"
+												class="btn btn-primary btn-lg"
 												id="submitButton"
-												type="submit"
-											>
+												type="submit">
 												Speak to a licensed insurance agent
 											</button>
 										</div>
 									</div>
 								</div>
-								<!-- Submit success message-->
-								<!---->
-								<!-- This is what your users will see when the form-->
-								<!-- has successfully submitted-->
-								<div class="d-none" id="submitSuccessMessage">
-									<div class="text-center mb-3">
-										<div class="fw-bolder">Form submission successful!</div>
-										<p>To activate this form, sign up at</p>
-										<a
-											class="text-white"
-											href="https://startbootstrap.com/solution/contact-forms"
-											>https://startbootstrap.com/solution/contact-forms</a
-										>
-									</div>
-								</div>
-								<!-- Submit error message-->
-								<!---->
-								<!-- This is what your users will see when there is-->
-								<!-- an error submitting the form-->
-								<div class="d-none" id="submitErrorMessage">
-									<div class="text-center text-danger mb-3">
-										Error sending message!
-									</div>
-								</div>
-							</form>
 						</div>
 					</div>
 				</div>
@@ -276,79 +241,13 @@
 			<div class="container position-relative">
 				<div class="row justify-content-center">
 					<div class="col-xl-6">
-						<h2 class="mb-4">Sign up now!</h2>
-						<!-- Signup form-->
-						<!-- * * * * * * * * * * * * * * *-->
-						<!-- * * SB Forms Contact Form * *-->
-						<!-- * * * * * * * * * * * * * * *-->
-						<!-- This form is pre-integrated with SB Forms.-->
-						<!-- To make this form functional, sign up at-->
-						<!-- https://startbootstrap.com/solution/contact-forms-->
-						<!-- to get an API token!-->
-						<form
-							class="form-subscribe"
-							id="contactFormFooter"
-							data-sb-form-api-token="API_TOKEN"
-						>
-							<!-- Email address input-->
-							<div class="row">
-								<div class="col">
-									<input
-										class="form-control form-control-lg"
-										id="emailAddressBelow"
-										type="email"
-										placeholder="Email Address"
-										data-sb-validations="required,email"
-									/>
-									<div
-										class="invalid-feedback text-white"
-										data-sb-feedback="emailAddressBelow:required"
-									>
-										Email Address is required.
-									</div>
-									<div
-										class="invalid-feedback text-white"
-										data-sb-feedback="emailAddressBelow:email"
-									>
-										Email Address Email is not valid.
-									</div>
-								</div>
-								<div class="col-auto">
-									<button
-										class="btn btn-primary btn-lg disabled"
-										id="submitButton"
-										type="submit"
-									>
-										Submit
-									</button>
-								</div>
-							</div>
-							<!-- Submit success message-->
-							<!---->
-							<!-- This is what your users will see when the form-->
-							<!-- has successfully submitted-->
-							<div class="d-none" id="submitSuccessMessage">
-								<div class="text-center mb-3">
-									<div class="fw-bolder">Form submission successful!</div>
-									<p>To activate this form, sign up at</p>
-									<a
-										class="text-white"
-										href="https://startbootstrap.com/solution/contact-forms"
-										>https://startbootstrap.com/solution/contact-forms</a
-									>
-								</div>
-							</div>
-							<!-- Submit error message-->
-							<!---->
-							<!-- This is what your users will see when there is-->
-							<!-- an error submitting the form-->
-							<div class="d-none" id="submitErrorMessage">
-								<div class="text-center text-danger mb-3">
-									Error sending message!
-								</div>
-							</div>
-						</form>
-					</div>
+						
+						<div class="col">
+              <div class="col-auto">
+                <a href="./pages/contact_form.html" class="btn btn-primary btn-lg" id="submitButton">
+                  Click to sign up!
+                </a>
+              </div>
 				</div>
 			</div>
 		</section>

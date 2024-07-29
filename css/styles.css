@@ -3718,6 +3718,26 @@ textarea.form-control-lg {
   width: 100%;
 }
 
+.bg-blue {
+  background-color: #06357a
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item:hover .nav-link {
+  background-color: #062a5f; /* Un tono más oscuro que bg-dark */
+  color: white;
+}
+
 .tab-content > .tab-pane {
   display: none;
 }
@@ -10841,11 +10861,20 @@ textarea.form-control-lg {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
+  background: url("../assets/img/background/family-wooden-desk.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
+
+header.final_expense {
+  background-color: #343a40;
+  height: 30rem;
+  background: url("../assets/img/background/famili-hands.jpg") no-repeat center center;
+  background-size: cover;
+  opacity: 0.90;
+}
+
 header.masthead:before {
   content: "";
   position: absolute;

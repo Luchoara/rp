@@ -1,6 +1,6 @@
-body {
+.contact-form {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #79aadf;
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,12 +9,14 @@ body {
     height: 100vh;
 }
 
-.container {
-    width: 50%;
+.container-form {
     background: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Para limitar el ancho máximo del formulario */
+    box-sizing: border-box;
 }
 
 h2 {
