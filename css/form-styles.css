@@ -77,3 +77,24 @@ button:hover {
     margin-right: 10px;
     color: #007bff;
 }
+
+
+.section-form {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center;    /* Centra horizontalmente los elementos hijos */
+    justify-content: center; /* Centra verticalmente los elementos */
+    min-height: 100vh;       /* Ocupa al menos el 100% de la altura de la pantalla */
+    background-color: #f8f9fa; /* Color de fondo opcional */
+    padding: 20px;           /* Espacio alrededor de la sección */
+    margin-bottom: -5rem;
+}
+
+.section-title {
+    margin-bottom: 20px; /* Espacio debajo del título para separarlo del formulario */
+    text-align: center;  /* Asegura que el texto esté centrado */
+}
+
+.title-form{
+    margin-top: -8rem;
+}
