@@ -6,7 +6,7 @@
 
 .benefits li {
   display: flex;
-  align-items: flex-start; /* Alinea los íconos y el texto en la parte superior */
+  align-items: center; /* Alinea los íconos y el texto en la parte superior */
   margin-bottom: 10px;
 }
 
@@ -24,14 +24,15 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .fe-li {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px;
+  padding: 10px;
 }
 
 .fe-li img {
@@ -41,7 +42,7 @@
 }
 
 .fe-icons {
-  font-size: 16px;
+  font-size: 20px;
   color: #333;
   margin: 0;
   max-width: 90%; /* Limita el ancho del texto */
@@ -58,3 +59,4 @@
       margin-right: 20px;
   }
 }
+

@@ -14,6 +14,7 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: auto;
     width: 100%;
     max-width: 600px; /* Para limitar el ancho máximo del formulario */
     box-sizing: border-box;
@@ -81,14 +82,21 @@ button:hover {
 
 .section-form {
     display: flex;
-    flex-direction: column; /* Alinea los elementos en columna */
+    flex-direction: row; /* Alinea los elementos en columna */
     align-items: center;    /* Centra horizontalmente los elementos hijos */
     justify-content: center; /* Centra verticalmente los elementos */
     min-height: 100vh;       /* Ocupa al menos el 100% de la altura de la pantalla */
     background-color: #f8f9fa; /* Color de fondo opcional */
     padding: 20px;           /* Espacio alrededor de la sección */
-    margin-bottom: -5rem;
+    margin-bottom:0;
 }
+
+.image-container img {
+    width: 100%;
+    max-height: 600px; /* Ajusta la altura de la imagen de acuerdo con el ancho */
+    object-fit: cover; /* Cubre completamente el contenedor sin distorsión */
+}
+
 
 .section-title {
     margin-bottom: 20px; /* Espacio debajo del título para separarlo del formulario */
@@ -97,4 +105,105 @@ button:hover {
 
 .title-form{
     margin-top: -8rem;
+}
+
+.image-form{
+    flex-direction: row-reverse; /* Alinea los elementos en columna */
+    align-items: normal;    /* Centra horizontalmente los elementos hijos */
+    padding: 0px;
+}
+
+.form-check{
+    margin-bottom: 0.5rem;
+}
+
+.d-flex-footer {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    justify-content: space-between; /* Distribuye espacio entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario en pantallas pequeñas */
+}
+
+/* Responsive Styles */
+@media (max-width: 767.98px) {
+    .section-form {
+        flex-direction: column; /* Stack items vertically on small screens */
+        text-align: center; /* Center text for better layout */
+        padding: 10px 0; /* Reduce padding to avoid extra spaces */
+    }
+
+    .image-container {
+        display: none; /* Hide the image on very small screens */
+    }
+
+    .content-container {
+        width: 100%; /* Ensure the content container takes full width */
+        padding: 10px; /* Add some padding around the content */
+        
+    }
+    .container-form {
+        padding: 10px; /* Reduce padding to avoid space at the top and bottom */
+        margin: 0; /* Remove margins to eliminate extra space */
+        box-shadow: none; /* Remove shadow to make it simpler */
+        border-radius: 0; /* Remove rounded corners */
+    }
+
+    .d-flex {
+        flex-direction: column; /* Cambia a una disposición en columna en pantallas pequeñas */
+        align-items: center; /* Centra horizontalmente los elementos en la columna */
+    }
+
+    .text-muted {
+        margin-top: 10px; /* Añade margen superior para espaciar el texto en la columna */
+        text-align: center; /* Alinea el texto al centro */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .section-form {
+        flex-direction: row; /* Default to row layout for medium screens */
+    }
+
+    .image-container {
+        width: 50%; /* Set image container to half width */
+    }
+
+    .content-container {
+        width: 50%; /* Set content container to half width */
+    }
+}
+
+/* Footer Styles */
+.footer {
+    padding: 20px 0; /* Añade algo de espacio alrededor del footer */
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .text-muted {
+    margin-bottom: 0; /* Asegura que el texto no tenga margen inferior */
+}
+
+.footer .list-inline {
+    margin-bottom: 0; /* Elimina el margen inferior de la lista */
+}
+
+.footer .list-inline-item {
+    margin: 0 5px; /* Añade un pequeño margen horizontal entre los elementos de la lista */
+}
+
+/* Responsive Styles */
+@media (max-width: 767.98px) {
+    .footer .row {
+        flex-direction: column; /* Cambia a una disposición en columna en pantallas pequeñas */
+        text-align: center; /* Centra el texto y la lista de enlaces */
+    }
+
+    .footer .list-inline {
+        margin-top: 10px; /* Añade espacio superior entre el texto y la lista en pantallas pequeñas */
+    }
 }

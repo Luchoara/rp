@@ -10858,19 +10858,38 @@ textarea.form-control-lg {
   font-size: 4.5rem;
 }
 
-header.masthead {
+header.medicare  {
   position: relative;
   background-color: #343a40;
-  background: url("../assets/img/background/family-wooden-desk.jpg") no-repeat center center;
+  background: url("../assets/img/background/family-wooden-desk-edited.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
 
+header.medicare:before {
+  content: "";
+  position: absolute;
+  background-color: #1c375e;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+header.masthead  {
+  position: relative;
+  background-color: #343a40;
+  background: url("../assets/img/background/close-up-doctor-with-stethoscope.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
 header.final_expense {
   background-color: #343a40;
   height: 30rem;
-  background: url("../assets/img/background/famili-hands.jpg") no-repeat center center;
+  background: url("../assets/img/background/family-hands.jpg") no-repeat center center;
   background-size: cover;
   opacity: 0.90;
 }
@@ -10885,9 +10904,7 @@ header.masthead:before {
   left: 0;
   opacity: 0.5;
 }
-header.masthead h1, header.masthead .h1 {
-  font-size: 2rem;
-}
+
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 12rem;
@@ -10943,8 +10960,9 @@ header.masthead h1, header.masthead .h1 {
 }
 
 footer.footer {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  clear: both; /* Ensure it doesn't overlap other elements */
 }
 
 
@@ -11100,4 +11118,16 @@ footer.footer {
     transform: scale(1, 1);
     opacity: 0;
   }
+}
+
+/* CCPA */
+.policies {
+  margin: 5rem 5rem 0 5rem;
+}
+
+/* image form final-expense */
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
