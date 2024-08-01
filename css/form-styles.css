@@ -85,7 +85,7 @@ button:hover {
     flex-direction: row; /* Alinea los elementos en columna */
     align-items: center;    /* Centra horizontalmente los elementos hijos */
     justify-content: center; /* Centra verticalmente los elementos */
-    min-height: 100vh;       /* Ocupa al menos el 100% de la altura de la pantalla */
+    min-height: 70vh;       /* Ocupa al menos el 100% de la altura de la pantalla */
     background-color: #f8f9fa; /* Color de fondo opcional */
     padding: 20px;           /* Espacio alrededor de la sección */
     margin-bottom:0;
@@ -109,8 +109,6 @@ button:hover {
 
 .image-form{
     flex-direction: row-reverse; /* Alinea los elementos en columna */
-    align-items: normal;    /* Centra horizontalmente los elementos hijos */
-    padding: 0px;
 }
 
 .form-check{
