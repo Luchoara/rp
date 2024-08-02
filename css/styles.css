@@ -3723,14 +3723,38 @@ textarea.form-control-lg {
 }
 
 .nav-item {
-  margin: 0 10px;
+  margin: 0 40px;
 }
 
 .nav-link {
   color: white;
-  padding: 10px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  font-size: 1rem; 
+}
+
+/* Para pantallas medianas (tablets) */
+@media (min-width: 768px) {
+  .nav-link {
+    font-size: 1.1rem;
+    padding: 5px;
+  }
+}
+
+/* Para pantallas grandes (desktops) */
+@media (min-width: 992px) {
+  .nav-link {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+}
+
+/* Para pantallas extra grandes (largas) */
+@media (min-width: 1200px) {
+  .nav-link {
+    font-size: 1.3rem;
+    padding: 10px;
+  }
 }
 
 .nav-item:hover .nav-link {
@@ -10913,6 +10937,7 @@ header.masthead:before {
   header.masthead h1, header.masthead .h1 {
     font-size: 3rem;
   }
+  
 }
 
 .showcase .showcase-text {

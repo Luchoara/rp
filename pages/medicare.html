@@ -60,7 +60,7 @@
 				>
 					<ul class="nav">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="/index.html"
+							<a class="nav-link" aria-current="page" href="/index.html"
 								>Home</a
 							>
 						</li>
@@ -183,53 +183,125 @@
       </div>
     </section>
 		
-		<section id="form" class="section-form">
-			<div class="section-title title-form py-4 px-lg-5 text-center">
-				<h2>Contact us</h2></div>
-			<div class="container-form">
-				<form action="POST">
+		<section id="form" class="section-form image-form d-flex">
+			<div class="image-container" style="flex: 1; overflow: hidden">
+				<img
+					src="../assets/img/images/medium-shot-senior-couple-with-laptop.jpg"
+					alt="Form Image"
+					style="width: 100%; height: 100%; object-fit: cover"
+				/>
+			</div>
+			<div
+				class="content-container"
+				style="
+					flex: 1;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;">
+				<div class="container-form py-4 px-lg-5 text-center">
+					<h2 class="title-form">Get Free Quotes Now!</h2>
+					<form action="POST">
 						<div class="form-group">
-								<label for="firstName"><i class="fa fa-user"></i> First Name</label>
-								<input type="text" id="firstName" name="firstName" placeholder="Your Name" required class="form-control">
+							<label for="firstName"><i class="fa fa-user"></i> First Name</label>
+							<input
+								type="text"
+								id="firstName"
+								name="firstName"
+								placeholder="Your Name"
+								required
+								class="form-control"
+							/>
 						</div>
 						<div class="form-group">
-								<label for="lastName"><i class="fa fa-user"></i> Last Name</label>
-								<input type="text" id="lastName" name="lastName" placeholder="Your Last Name" required class="form-control">
+							<label for="lastName"><i class="fa fa-user"></i> Last Name</label>
+							<input
+								type="text"
+								id="lastName"
+								name="lastName"
+								placeholder="Your Last Name"
+								required
+								class="form-control"
+							/>
 						</div>
 						<div class="form-group">
-								<label for="address"><i class="fa fa-address-card"></i> Address</label>
-								<input type="text" id="address" name="address" placeholder="Your address" required class="form-control">
+							<label for="state"><i class="fa fa-map"></i> State</label>
+							<input
+								type="text"
+								id="state"
+								name="state"
+								placeholder="ex: CA"
+								required
+								class="form-control"
+							/>
 						</div>
 						<div class="form-group">
-								<label for="city"><i class="fa fa-building"></i> City</label>
-								<input type="text" id="city" name="city" placeholder="ex: Long Beach" required class="form-control">
+							<label for="zipCode"><i class="fa fa-map-pin"></i> Zip Code</label>
+							<input
+								type="text"
+								id="zipCode"
+								name="zipCode"
+								placeholder="ex: 90001"
+								required
+								class="form-control"
+							/>
 						</div>
 						<div class="form-group">
-								<label for="state"><i class="fa fa-map"></i> State</label>
-								<input type="text" id="state" name="state" placeholder="ex: CA" required class="form-control">
+							<label for="emailAddress"><i class="fa fa-envelope"></i> Email Address</label>
+							<input
+								type="email"
+								id="emailAddress"
+								name="emailAddress"
+								placeholder="email@email.com"
+								required
+								class="form-control"
+							/>
 						</div>
 						<div class="form-group">
-								<label for="zipCode"><i class="fa fa-map-pin"></i> Zip Code</label>
-								<input type="text" id="zipCode" name="zipCode" placeholder="ex: 90001" required class="form-control">
+							<label for="phoneNumber"><i class="fa fa-phone"></i> Phone Number</label>
+							<input
+								type="tel"
+								id="phoneNumber"
+								name="phoneNumber"
+								placeholder="8887777777"
+								required
+								class="form-control"
+							/>
 						</div>
-						<div class="form-group">
-								<label for="emailAddress"><i class="fa fa-envelope"></i> Email Address</label>
-								<input type="email" id="emailAddress" name="emailAddress" placeholder="email@email.com" required class="form-control">
-						</div>
-						<div class="form-group">
-								<label for="phoneNumber"><i class="fa fa-phone"></i> Phone Number</label>
-								<input type="tel" id="phoneNumber" name="phoneNumber" placeholder="8887777777" required class="form-control">
+						<div class="form-check">
+							<input
+								type="checkbox"
+								id="terms"
+								name="terms"
+								required
+								class="form-check-input"
+							/>
+							<label for="terms" class="form-check-label">
+								I agree to the
+								<a href="../pages/terms-conditions.html" target="_blank">terms and conditions</a>.
+							</label>
 						</div>
 						<button type="submit" class="btn btn-primary">Submit</button>
-				</form>
-			</div>
-		</section>
-		<!-- Footer-->
-		<footer class="footer bg-light">
-			<div class="elementor-element elementor-element-e5909b8 elementor-widget elementor-widget-text-editor" data-id="e5909b8" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p style="text-align: start;"><span style="color: #383838;">&copy; Rp-Solutions 2024.&nbsp; All Rights Reserved.&nbsp;&nbsp; <span style="color: #0f0fe3;">| <a style="color: #0f0fe3;" href="../pages/privacy_policy.html">Privacy Policy</a> | <a style="color: #0f0fe3;" href="../pages/ccpa.html">CCPA</a> | <a style="color: #0f0fe3;" href="../pages/terms-conditions.html">Terms of Use</a> | <a style="color: #0f0fe3;" href="https://findonlinequote.com/index.php/our-affiliate-partners/">Our Affiliate Partners</a></span></span></p>						</div>
+					</form>
 				</div>
+			</div>
+		</section>	
+		<!-- Footer-->
+		<footer class="footer bg-blue">
+			<div class="elementor-widget-container">
+					<p style="text-align: start;">
+							<span style="color: #f7f5f5;">
+								&emsp; &copy; Rp-Solutions 2024. All Rights Reserved.
+									<span class="footer-links" style="color: #bfbff6;">
+											<a></a>
+											<a href="../pages/privacy_policy.html">Privacy Policy</a>
+											<a href="../pages/ccpa.html">CCPA</a>
+											<a href="../pages/terms-conditions.html">Terms of Use</a>
+											<a href="#">Our Affiliate Partners</a>
+									</span>
+							</span>
+					</p>
+			</div>
 		</footer>
 		<!-- Bootstrap core JS-->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
