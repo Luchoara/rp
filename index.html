@@ -8,9 +8,9 @@
 		/>
 		<meta name="description" content="" />
 		<meta name="author" content="" />
-		<title>RP-Solutions</title>
+		<title>Health Smart Quotes</title>
 		<!-- Favicon-->
-		<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+		<link rel="icon" type="image/x-icon" href="../assets/img/logo/favicon-256.png" />
 		<!-- Bootstrap icons-->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
@@ -23,6 +23,10 @@
 			rel="stylesheet"
 			type="text/css"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		/>
 		<!-- Core theme CSS (includes Bootstrap)-->
 		<link href="../css/styles.css" rel="stylesheet" />
 		<link href="../css/form-styles.css" rel="stylesheet" />
@@ -31,8 +35,8 @@
 		<!-- Navigation-->
 		<nav class="navbar navbar-expand-lg bg-blue border-body" data-bs-theme="dark">
     <div class="container">
-          <a class="navbar-brand" href="#">
-              <img src="./assets/img/logo/223.jpg" alt="LOGO" width="50" height="40">
+          <a class="brand" href="/index.html">
+              <img src="./assets/img/logo/logo-edited.png" alt="LOGO" class="img-brand">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -43,11 +47,12 @@
                       <a class="nav-link" aria-current="page" href="/index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="../pages/final_expense.html">Final Expense</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="../pages/medicare.html">Medicare</a>
-                  </li>
+										<a class="nav-link" href="../pages/medicare.html">Medicare</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="../pages/final_expense.html"
+											>Final Expense</a>
+									</li>
               </ul>
           </div>
       </div>
@@ -59,7 +64,7 @@
 					<div class="col-xl-6">
 						<div class="text-center text-white">
 							<!-- Page heading-->
-							<h1 class="mb-5">Click below to..</h1>
+							<h1 class="mb-5">Click below to...</h1>
 								<div class="row">
 									<div class="col">
 										<div class="col-auto">
@@ -83,110 +88,119 @@
 				<div class="row">
 					<div class="col-lg-4">
 						<div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-							<div class="features-icons-icon d-flex">
-								<img
-									src="/assets/img/icons/shield_heart.png"
-									class="mx-auto text-primary"
-									alt="shield"
-								/>
+							<div class="features-icons-icon d-flex justify-content-center align-items-center">
+								<i class="fas fa-chart-line text-primary"></i>
 							</div>
-							<h3>Discover Medicare Plan Choices</h3>
-							<p class="lead mb-0">
-								Consulting with a licensed insurance agent enables you to assess
-								your eligibility for enrolling during a Special Enrollment
-								period and evaluate Medicare plan alternatives in your region to
-								optimize plan benefits.
+							<h3 class="text-center text-primary">More than 780 Life Insurance Plans</h3>
+							<p class="lead mb-2 text-center">
+								<strong>Providing a wide range of life insurance plans to secure your future and your family's well-being.</strong>
 							</p>
 						</div>
 					</div>
 					<div class="col-lg-4">
 						<div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-							<div class="features-icons-icon d-flex">
-								<img
-									src="/assets/img/icons/risk-management.png"
-									class="mx-auto text-primary"
-									alt="management"
-								/>
+							<div class="features-icons-icon d-flex justify-content-center align-items-center">
+								<i class="fas fa-hospital text-primary"></i>
 							</div>
-							<h3>Possibility of Qualifying for Medicare Plan</h3>
-							<p class="lead mb-0">
-								Certain individuals might qualify for a Medicare Advantage Plan.
-								Contact a licensed insurance agent to determine your eligibility
-								for enrolling during a Special Enrollment period.
+							<h3 class="text-center text-primary">More than 1960 Happy Customers</h3>
+							<p class="lead mb-2 text-center">
+								<strong>Join our satisfied customers who have found peace of mind with our comprehensive insurance solutions.</strong>
 							</p>
 						</div>
 					</div>
 					<div class="col-lg-4">
 						<div class="features-icons-item mx-auto mb-0 mb-lg-3">
-							<div class="features-icons-icon d-flex">
-								<img
-									src="/assets/img/icons/checkup-list.png"
-									class="mx-auto text-primary"
-									alt="shield"
-								/>
+							<div class="features-icons-icon d-flex justify-content-center align-items-center">
+								<i class="fas fa-hand-holding-heart text-primary"></i>
 							</div>
-							<h3>Efficient</h3>
-							<p class="lead mb-0">
-								Contact a licensed insurance agent to verify your eligibility
-								for enrollment and compare Medicare plans available in your
-								area.
+							<h3 class="text-center text-primary">Comprehensive Health Insurance</h3>
+							<p class="lead mb-2 text-center">
+								<strong>Explore our health insurance plans to ensure access to quality healthcare services and coverage.</strong>
 							</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+		
+
 
 		<!-- Image Showcases-->
 		<section class="showcase">
 			<div class="container-fluid p-0">
-				<div class="row g-0">
-					<div
-						class="col-lg-6 order-lg-2 text-white showcase-img"
-						style="background-image: url('assets/img/doctor-alegre.jpg')"
-					></div>
-					<div class="col-lg-6 order-lg-1 my-auto showcase-text">
-						<h2>Who we are</h2>
+				<!-- First Row -->
+				<div class="row g-0 align-items-center">
+					<div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/images/doctor-alegre.jpg'); background-size: cover; background-position: center; height: 100vh;">
+					</div>
+					<div class="col-lg-6 order-lg-1 d-flex flex-column justify-content-center p-4 p-lg-5 showcase-text">
+						<h3 class="display-4 mb-3">Health Smart Quotes</h3>
 						<p class="lead mb-0">
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure,
-							atque quo est minus odit a asperiores dignissimos voluptates non
-							itaque alias at quisquam repellendus minima obcaecati harum et
-							quos. Veritatis?!
+							We’re here to assist you in safeguarding all aspects of your well-being. Having insurance is key to protecting you, your family, and your health. Our partners are leading names in the industry, and we’re here to help.
 						</p>
+						<ul class="list-unstyled mt-4">
+							<li><strong>Payment Flexibility</strong></li>
+							<li><strong>Quick Approvals</strong></li>
+							<li><strong>No Medical Exam Required</strong></li>
+							<li><strong>780 Life Insurance Plans</strong></li>
+							<li><strong>990 Satisfied Customers</strong></li>
+						</ul>
 					</div>
 				</div>
-				<div class="row g-0">
-					<div
-						class="col-lg-6 text-white showcase-img"
-						style="background-image: url('assets/img/doctor-feliz.jpg')"
-					></div>
-					<div class="col-lg-6 my-auto showcase-text">
-						<h2>Receive the best insurance services</h2>
+		
+				<!-- Second Row -->
+				<div class="row g-0 align-items-center">
+					<div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/images/doctor-feliz.jpg'); background-size: cover; background-position: center; height: 100vh;">
+					</div>
+					<div class="col-lg-6 d-flex flex-column justify-content-center p-4 p-lg-5 showcase-text">
+						<h3 class="display-4 mb-3">Receive the Best Insurance Services</h3>
 						<p class="lead mb-0">
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							Dignissimos praesentium cumque eum rerum expedita debitis numquam?
-							Recusandae harum mollitia modi ab, atque provident reprehenderit
-							explicabo ipsum deserunt aut quas placeat.!
+							At Health Smart Quotes, we are dedicated to providing you with the finest medical insurance services available. We understand that your health is your most valuable asset, and our mission is to protect it with comprehensive, reliable coverage that meets your specific needs.
 						</p>
+						<ul class="list-unstyled mt-4">
+							<li><strong>Tailored Plans:</strong> We offer a wide range of insurance options designed to fit your lifestyle and budget, ensuring that you get the coverage you need without paying for what you don’t.</li>
+							<li><strong>Expert Guidance:</strong> Our team of insurance specialists is here to help you navigate your options and find the perfect plan for you and your family.</li>
+						</ul>
 					</div>
 				</div>
-				<div class="row g-0">
-					<div
-						class="col-lg-6 order-lg-2 text-white showcase-img"
-						style="background-image: url('assets/img/persona-cita-virtual.jpg')"
-					></div>
-					<div class="col-lg-6 order-lg-1 my-auto showcase-text">
-						<h2>Customers always satisfied</h2>
+				<!-- Third Row -->
+				<div class="row g-0 align-items-center">
+					<div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/images/persona-cita-virtual.jpg'); background-size: cover; background-position: center; height: 100vh;">
+					</div>
+					<div class="col-lg-6 order-lg-1 d-flex flex-column justify-content-center p-4 p-lg-5 showcase-text">
+						<h3 class="display-4 mb-3">Customers Always Satisfied</h3>
 						<p class="lead mb-0">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-							nam laborum, magnam provident ea dolor recusandae, optio iure
-							perspiciatis tempore nihil totam fugiat tempora quasi omnis
-							adipisci obcaecati voluptas tenetur.!
+							Our medical insurance plans are designed with your needs in mind, ensuring that you receive the best coverage and care possible.
 						</p>
+						<ul class="list-unstyled mt-4">
+							<li><strong>Personalized Support:</strong> Our dedicated team works closely with you to understand your needs and help you choose the best plan.</li>
+							<li><strong>Comprehensive Coverage:</strong> From routine visits to specialized treatments, our plans cover a wide range of medical services.</li>
+							<li><strong>Simple Process:</strong> We make it easy to get insured with straightforward applications and fast approvals.</li>
+							<li><strong>Trusted Partners:</strong> We collaborate with leading healthcare providers to offer you high-quality services and peace of mind.</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</section>
+		
+		<style>
+			.showcase {
+				position: relative;
+				overflow: hidden;
+			}
+		
+			.showcase-img {
+				background-size: cover;
+				background-position: center;
+				height: 100vh;
+			}
+		
+			.showcase-text {
+				color: #ffffff;
+				background: rgba(12, 57, 238, 0.616);
+				padding: 2rem;
+			}
+		</style>
+		
 		<!-- Testimonials-->
 		<section class="testimonials text-center bg-light">
 			<div class="container">
@@ -201,7 +215,7 @@
 							/>
 							<h5>Margaret E.</h5>
 							<p class="font-weight-light mb-0">
-								"This is fantastic! Thanks so much!"
+								"Absolutely fantastic experience! The team was incredibly supportive and made everything seamless. Thank you so much!"
 							</p>
 						</div>
 					</div>
@@ -213,7 +227,7 @@
 								alt="..."
 							/>
 							<h5>Fred S.</h5>
-							<p class="font-weight-light mb-0">"Excelent service!"</p>
+							<p class="font-weight-light mb-0">"The service was exceptional, efficient, helpful, and top-notch. I couldn’t ask for more!"</p>
 						</div>
 					</div>
 					<div class="col-lg-4">
@@ -225,7 +239,7 @@
 							/>
 							<h5>Sarah W.</h5>
 							<p class="font-weight-light mb-0">
-								"Thanks so much for making these resources available to us!"
+								"I’m incredibly grateful for the resources and support provided. It made navigating my insurance options so much easier!"
 							</p>
 						</div>
 					</div>
@@ -236,9 +250,8 @@
 		<section id="form" class="section-form image-form d-flex">
 			<div class="image-container" style="flex: 1; overflow: hidden">
 				<img
-					src="./assets/img/images/young-woman-laptop.png"
+					src="../assets/img/images/young-woman-laptop.png"
 					alt="Form Image"
-					style="width: 100%; height: 100%; object-fit: cover"
 				/>
 			</div>
 			<div
@@ -248,13 +261,9 @@
 					display: flex;
 					flex-direction: column;
 					justify-content: center;
-					align-items: center;
-				"
-			>
-				<div class="section-title title-form py-4 px-lg-5 text-center">
-					<h2>Contact Us!</h2>
-				</div>
-				<div class="container-form">
+					align-items: center;">
+				<div class="container-form py-4 px-lg-5 ">
+					<h2 class="title-form">Contact Us!</h2>
 					<form action="POST">
 						<div class="form-group">
 							<label for="firstName"
@@ -331,37 +340,37 @@
 							/>
 						</div>
 						<div class="form-check">
-							<input
-								type="checkbox"
-								id="terms"
-								name="terms"
-								required
-								class="form-check-input"
-							/>
+							<input type="checkbox" id="terms" name="terms" required="" class="form-check-input">
 							<label for="terms" class="form-check-label">
-								I agree to the
-								<a href="../pages/terms-conditions.html" target="_blank"
-									>terms and conditions</a
-								>.
+								By clicking the Submit button, and submitting this form I agree with <b>TCPA</b> and <a href="../pages/terms-conditions.html">Terms and Conditions</a> and <a href="../pages/privacy_policy.html">Privacy Policy</a> and that I am 18+ years old and 
+								I provide my electronic signature expressly consenting to receive emails, calls, postal mail, text messages and other forms of marketing communication from 
+								Health Smart Quotes, insurance companies, their agents and <a href="../pages/afiliate-partners.html">Affiliate Partners</a> to contact me by telephone calls and text messages for products and services including Medicare Supplement, 
+								Medicare Advantage and Prescription Drug Plans and other non-insurance offers to the number(s) I provided even if my telephone number is a mobile number 
+								that is currently listed on any state, federal or corporate Do Not Call list. This is a solicitation for insurance.
+								<br>
+								<br>
+								I agree to receive telemarketing calls and pre-recorded messages via automated telephone dialing systems, and artificial or pre-recorded voices. 
+								I understand that my consent is not a condition of purchase of any goods or services and that I may revoke my consent at any time. 
+								I understand that standard charges for calls, messages and data rates may apply.
 							</label>
 						</div>
-						<button type="submit" class="btn btn-primary">Submit</button>
+						<button type="submit" class="btn btn-primary form-button w-100">Submit</button>
 					</form>
 				</div>
 			</div>
-		</section>
+		</section>		
 		<!-- Footer-->
 		<footer class="footer bg-blue">
 			<div class="elementor-widget-container">
 					<p style="text-align: start;">
 							<span style="color: #f7f5f5;">
-								&emsp; &copy; Rp-Solutions 2024. All Rights Reserved.
+								&emsp; &copy; Health Smart Quotes 2024. All Rights Reserved.
 									<span class="footer-links" style="color: #bfbff6;">
 											<a></a>
 											<a href="../pages/privacy_policy.html">Privacy Policy</a>
 											<a href="../pages/ccpa.html">CCPA</a>
 											<a href="../pages/terms-conditions.html">Terms of Use</a>
-											<a href="#">Our Affiliate Partners</a>
+											<a href="../pages/afiliate-partners.html">Our Affiliate Partners</a>
 									</span>
 							</span>
 					</p>
