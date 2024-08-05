@@ -11159,17 +11159,15 @@ footer.footer {
 }
 
 .brand {
-  display: inline-block;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  overflow: hidden; /* Esto asegura que la imagen se recorte según el borde redondeado */
+  display: flex;
+  width: 20rem;
+  height: 4rem;
+
 }
 
 .img-brand {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
   object-fit: fill;
 }
 
