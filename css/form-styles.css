@@ -123,11 +123,11 @@ button:hover {
 }
 
 .form-check {
-    margin-bottom: 0.5rem;
+    margin-bottom: 3rem;
 }
 
 .form-check-label {
-    font-size: 10px;
+    font-size: 0.7rem;
 }
 
 /* Footer part */
@@ -323,7 +323,7 @@ button:hover {
 
 /* Disclaimer Text */
 .elementor-element-6ddac5d p {
-    font-size: 0.8rem;
+    font-size: 0.3rem;
     color: #333;
     line-height: 1.6;
     margin: 1rem;
