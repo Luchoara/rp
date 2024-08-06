@@ -323,7 +323,7 @@ button:hover {
 
 /* Disclaimer Text */
 .elementor-element-6ddac5d p {
-    font-size: 0.3rem;
+    font-size: 0.7rem;
     color: #333;
     line-height: 1.6;
     margin: 1rem;
@@ -348,8 +348,33 @@ button:hover {
     }
 
     .elementor-element-6ddac5d p {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 }
 
 
+.detail-header {
+    padding: 150px 0;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.detail-header .slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Aplica la animación cuando se carga la página */
+.detail-header .slide-up {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 767px) {
+    .detail-header h1 {
+        font-size: 2rem;
+    }
+}

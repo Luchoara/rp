@@ -3625,7 +3625,7 @@ textarea.form-control-lg {
   font-weight: var(--bs-nav-link-font-weight);
   color: var(--bs-nav-link-color);
   text-decoration: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.20s ease-in-out, border-color 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
@@ -3723,7 +3723,7 @@ textarea.form-control-lg {
 }
 
 .nav-item {
-  margin: 0 40px;
+  margin: 0px 20px;
 }
 
 .nav-link {
@@ -10912,11 +10912,14 @@ header.masthead  {
   padding-bottom: 8rem;
 }
 header.final_expense {
+  display: flex;
+  align-items: center;
   background-color: #343a40;
   height: 30rem;
   background: url("../assets/img/background/family-hands.jpg") no-repeat center center;
   background-size: cover;
   opacity: 0.90;
+  justify-content: center;
 }
 
 header.masthead:before {
@@ -10932,11 +10935,11 @@ header.masthead:before {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
   header.masthead h1, header.masthead .h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   
 }
@@ -11243,4 +11246,64 @@ footer.footer {
   .features-icons .features-icons-icon img {
     max-width: 100px;
   }
+}
+
+
+/* Estilo inicial del h1 */
+header h1 {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+/* Estilo final después de la animación */
+header h1.slide-in {
+  transform: translateX(0);
+  opacity: 0.8;
+  border-radius: 20px;
+}
+
+/* Estilo para el enlace activo */
+.nav-link.active {
+  background-color: #0056b3;
+  border-radius: 5px; /* Opcional: para redondear las esquinas */
+  padding: 20px 20px; /* Ajustar el padding según sea necesario */
+  pointer-events: none; /* Desactiva el hover en el enlace activo */
+}
+
+/* Estilo del hover */
+.nav-link:hover {
+  background-color: #007bff;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+@keyframes slideDown {
+  0% {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+header.medicare h1 {
+  animation: slideDown 1.5s ease-out;
+}
+
+.center-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.title-index{
+  font-size: 6rem;
+  background-color: rgba(128, 168, 183, 0.5);
+}
+
+.title-pages{
+  background-color: rgba(128, 168, 183, 0.5);
 }

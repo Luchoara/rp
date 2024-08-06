@@ -10,7 +10,7 @@
 		<meta name="author" content="" />
 		<title>Medicare</title>
 		<!-- Favicon-->
-		<link rel="icon" type="image/x-icon" href="../assets/img/logo/new-favicon.png" />
+		<link rel="icon" type="image/x-icon" href="/new-favicon.png" />
 		<!-- Bootstrap icons-->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
@@ -28,9 +28,9 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
 		/>
 		<!-- Core theme CSS (includes Bootstrap)-->
-		<link href="../css/styles.css" rel="stylesheet" />
-		<link href="../css/form-styles.css" rel="stylesheet" />
-		<link href="../css/fe-styles.css" rel="stylesheet" />
+		<link href="/css/styles.css" rel="stylesheet" />
+		<link href="/css/form-styles.css" rel="stylesheet" />
+		<link href="/css/fe-styles.css" rel="stylesheet" />
 	</head>
 	<body>
 		<!-- Navigation-->
@@ -40,7 +40,11 @@
 		>
 			<div class="container">
 				<a class="brand" href="/index.html">
-					<img src="./assets/img/logo/health-smart-quotes-high-resolution-logo-transparent.png" alt="LOGO" class="img-brand">
+					<img
+						src="./assets/img/logo/health-smart-quotes-high-resolution-logo-transparent.png"
+						alt="LOGO"
+						class="img-brand"
+					/>
 				</a>
 				<button
 					class="navbar-toggler"
@@ -57,10 +61,7 @@
 					class="collapse navbar-collapse justify-content-center"
 					id="navbarNav"
 				>
-					<ul class="nav">
-						<li class="nav-item">
-							<a class="nav-link" href="/index.html">Home</a>
-						</li>
+					<ul class="nav center-nav">
 						<li class="nav-item">
 							<a class="nav-link" href="/medicare.html">Medicare</a>
 						</li>
@@ -77,16 +78,16 @@
 				<div class="row justify-content-center">
 					<div class="col-xl-6">
 						<div class="text-center text-white">
-							<h1 class="mb-5">Medicare</h1>
+							<h1 class="mb-1">Learn your Medicare options</h1>
 							<div class="row">
 								<div class="col">
 									<div class="col-auto">
 										<a
 											class="btn btn-primary btn-lg"
 											id="submitButton"
-											href="+888000000"
+											href="tel:+18889770751"
 										>
-											Speak to a licensed insurance agent&ensp;+888000000
+											Speak to a licensed insurance agent&ensp;(888) 977-0751
 										</a>
 									</div>
 								</div>
@@ -258,8 +259,8 @@
 			>
 				<div class="container-form py-4 px-lg-5 w-100">
 					<h2 class="title-form mb-4 text-center">Get Free Quotes Now!</h2>
-					<form action="POST">
-						<div class="form-group mb-3">
+					<form id="contact-form" method="POST">
+						<div class="form-group">
 							<label for="firstName"
 								><i class="fa fa-user"></i> First Name</label
 							>
@@ -272,7 +273,7 @@
 								class="form-control"
 							/>
 						</div>
-						<div class="form-group mb-3">
+						<div class="form-group">
 							<label for="lastName"><i class="fa fa-user"></i> Last Name</label>
 							<input
 								type="text"
@@ -283,7 +284,7 @@
 								class="form-control"
 							/>
 						</div>
-						<div class="form-group mb-3">
+						<div class="form-group">
 							<label for="state"><i class="fa fa-map"></i> State</label>
 							<input
 								type="text"
@@ -294,7 +295,7 @@
 								class="form-control"
 							/>
 						</div>
-						<div class="form-group mb-3">
+						<div class="form-group">
 							<label for="zipCode"
 								><i class="fa fa-map-pin"></i> Zip Code</label
 							>
@@ -307,7 +308,7 @@
 								class="form-control"
 							/>
 						</div>
-						<div class="form-group mb-3">
+						<div class="form-group">
 							<label for="emailAddress"
 								><i class="fa fa-envelope"></i> Email Address</label
 							>
@@ -320,7 +321,7 @@
 								class="form-control"
 							/>
 						</div>
-						<div class="form-group mb-3">
+						<div class="form-group">
 							<label for="phoneNumber"
 								><i class="fa fa-phone"></i> Phone Number</label
 							>
@@ -333,37 +334,58 @@
 								class="form-control"
 							/>
 						</div>
-						<div class="form-check mb-4">
+						<div class="form-group mb-3 w-100">
+							<label for="insuranceType"
+								><i class="fa fa-list"></i> Select Insurance Type</label
+							>
+							<select
+								id="insuranceType"
+								name="insuranceType"
+								required
+								class="form-control"
+							>
+								<option value="">--Please choose an option--</option>
+								<option value="Medicare">Medicare</option>
+								<option value="Final Expense">Final Expense</option>
+							</select>
+						</div>
+
+						<div class="form-check">
 							<input
 								type="checkbox"
 								id="terms"
 								name="terms"
-								required
+								required=""
 								class="form-check-input"
 							/>
-							<label for="terms" class="form-check-label small">
-								By clicking the Submit button, and submitting this form, I agree
-								with the <b>TCPA</b>,
-								<a href="../pages/terms-conditions.html">Terms and Conditions</a
-								>, and
-								<a href="../pages/privacy_policy.html">Privacy Policy</a>, and
-								that I am 18+ years old. I provide my electronic signature
+							<label for="terms" class="form-check-label">
+								By clicking the Submit button, and submitting this form I agree
+								with <b>TCPA</b> and
+								<a href="../pages/terms-conditions.html"
+									>Terms and Conditions</a
+								>
+								and
+								<a href="../pages/privacy_policy.html">Privacy Policy</a> and
+								that I am 18+ years old and I provide my electronic signature
 								expressly consenting to receive emails, calls, postal mail, text
-								messages, and other forms of marketing communication from Health
-								Smart Quotes, insurance companies, their agents, and
+								messages and other forms of marketing communication from Health
+								Smart Quotes, insurance companies, their agents and
 								<a href="../pages/afiliate-partners.html">Affiliate Partners</a>
 								to contact me by telephone calls and text messages for products
-								and services including Medicare Supplement, Medicare Advantage,
+								and services including Medicare Supplement, Medicare Advantage
 								and Prescription Drug Plans and other non-insurance offers to
-								the number(s) I provided, even if my telephone number is a
-								mobile number that is currently listed on any state, federal, or
+								the number(s) I provided even if my telephone number is a mobile
+								number that is currently listed on any state, federal or
 								corporate Do Not Call list. This is a solicitation for
-								insurance. I agree to receive telemarketing calls and
-								pre-recorded messages via automated telephone dialing systems
-								and artificial or pre-recorded voices. I understand that my
-								consent is not a condition of purchase of any goods or services
-								and that I may revoke my consent at any time. I understand that
-								standard charges for calls, messages, and data rates may apply.
+								insurance.
+								<br />
+								<br />
+								I agree to receive telemarketing calls and pre-recorded messages
+								via automated telephone dialing systems, and artificial or
+								pre-recorded voices. I understand that my consent is not a
+								condition of purchase of any goods or services and that I may
+								revoke my consent at any time. I understand that standard
+								charges for calls, messages and data rates may apply.
 							</label>
 						</div>
 						<button type="submit" class="btn btn-primary form-button w-100">
@@ -430,7 +452,45 @@
 			</div>
 		</footer>
 		<!-- Bootstrap core JS-->
+
+		<script type="text/javascript">
+			// Espera a que el DOM esté completamente cargado
+			document.addEventListener("DOMContentLoaded", function () {
+				// Get the current URL pathname
+				var currentPath_slash = window.location.pathname;
+				var currentPath = currentPath_slash + ".html";
+
+				// Select all navigation links
+				var navLinks = document.querySelectorAll(".nav-link");
+
+				// Loop through each link and check pathnames
+				navLinks.forEach(function (link) {
+					var linkPath = link.getAttribute("href"); // Remove leading slash (/)
+					
+					if (currentPath === linkPath) {
+						link.classList.add("active");
+						
+					}
+				});
+			});
+		</script>
+		<script type="text/javascript">
+			window.addEventListener("load", function () {
+				const headerH1 = document.querySelector("header h1");
+				headerH1.classList.add("slide-in");
+			});
+		</script>
+
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+		></script>
+
+		<script type="text/javascript">
+			emailjs.init("agDpv9t9yxtl-YONE");
+		</script>
 		<!-- Core theme JS-->
 		<script src="js/scripts.js"></script>
 		<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
