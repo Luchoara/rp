@@ -1457,7 +1457,7 @@ progress {
   }
   .col-xl-6 {
     flex: 0 0 auto;
-    width: 50%;
+    width: 90%;
   }
   .col-xl-7 {
     flex: 0 0 auto;
@@ -10939,7 +10939,7 @@ header.masthead:before {
     padding-bottom: 10rem;
   }
   header.masthead h1, header.masthead .h1 {
-    font-size: 4rem;
+    font-size: 6rem;
   }
   
 }
@@ -11302,6 +11302,8 @@ header.medicare h1 {
 .title-index{
   font-size: 6rem;
   background-color: rgba(128, 168, 183, 0.5);
+  font-weight: bold !important;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .title-pages{

@@ -80,8 +80,7 @@
 						<div class="text-center text-white">
 							<h1 class="mb-1">
 								Protect your health
-								<br>Secure your future
-							</h1>
+								<br>Secure your future</h1>
 							<div class="row">
 								<div class="col">
 									<div class="col-auto">
@@ -321,16 +320,16 @@
 							<label for="terms" class="form-check-label">
 								By clicking the Submit button, and submitting this form I agree
 								with <b>TCPA</b> and
-								<a href="../pages/terms-conditions.html"
+								<a href="/terms-conditions.html"
 									>Terms and Conditions</a
 								>
 								and
-								<a href="../pages/privacy_policy.html">Privacy Policy</a> and
+								<a href="/privacy_policy.html">Privacy Policy</a> and
 								that I am 18+ years old and I provide my electronic signature
 								expressly consenting to receive emails, calls, postal mail, text
 								messages and other forms of marketing communication from Health
 								Smart Quotes, insurance companies, their agents and
-								<a href="../pages/afiliate-partners.html">Affiliate Partners</a>
+								<a href="/afiliate_partners.html">Affiliate Partners</a>
 								to contact me by telephone calls and text messages for products
 								and services including Medicare Supplement, Medicare Advantage
 								and Prescription Drug Plans and other non-insurance offers to
@@ -363,12 +362,10 @@
 						&emsp; &copy; Health Smart Quotes 2024. All Rights Reserved.
 						<span class="footer-links" style="color: #bfbff6">
 							<a></a>
-							<a href="../pages/privacy_policy.html">Privacy Policy</a>
-							<a href="../pages/ccpa.html">CCPA</a>
-							<a href="../pages/terms-conditions.html">Terms of Use</a>
-							<a href="../pages/afiliate_partners.html"
-								>Our Affiliate Partners</a
-							>
+							<a href="/privacy_policy.html">Privacy Policy</a>
+							<a href="/ccpa.html">CCPA</a>
+							<a href="/terms-conditions.html">Terms And Conditions</a>
+							<a href="/afiliate-partners.html">Our Affiliate Partners</a>
 						</span>
 					</span>
 				</p>
@@ -381,6 +378,7 @@
 				// Get the current URL pathname
 				var currentPath_slash = window.location.pathname;
 				var currentPath = currentPath_slash + ".html";
+				console.log("Current URL pathname:", currentPath);
 
 				// Select all navigation links
 				var navLinks = document.querySelectorAll(".nav-link");
@@ -393,6 +391,7 @@
 						link.classList.add("active");
 						
 					}
+					console.log("Current navLinks Pathname:", linkPath);
 				});
 			});
 		</script>
